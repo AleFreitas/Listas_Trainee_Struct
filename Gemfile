@@ -44,3 +44,6 @@ gem 'figaro'
 #Usuário
 gem 'devise'
 gem 'simple_token_authentication'
+
+#Filtragem de JSONS
+gem 'active_model_serializers'

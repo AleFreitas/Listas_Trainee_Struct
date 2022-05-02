@@ -9,6 +9,11 @@ Rails.application.routes.draw do
         get 'logout', to: 'users#logout'
       end
 
+      scope 'user_products' do
+        delete 'delete/:id', to: 'user_products#delete'
+        post 'create', to: 'user_products#create'
+      end
+
       scope 'categories' do
         get 'index', to: 'categories#index'
         get 'show/:id', to: 'categories#show'
