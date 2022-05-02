@@ -1,5 +1,7 @@
 class Api::V1::UserProductsController < ApplicationController
     
+    acts_as_token_authentication_handler_for User
+
     def delete
         favorite = UserProduct.find(params[:id])
         favorite.destroy
