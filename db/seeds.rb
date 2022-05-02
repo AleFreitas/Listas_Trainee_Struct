@@ -32,3 +32,12 @@ Product.create!(name:'Doce Beijinho de Leite em pó',description: '1 unidade', p
 Product.create!(name:'Fiesta Mix',description: '1 unidade', price: 931,category_id:3)
 Product.create!(name:'Doce de Amendoim Gibi',description: '1 unidade', price: 350,category_id:3)
 Product.create!(name:'Gummi Mini Burger Doce de Gelatina',description: '1 pacote', price: 1200,category_id:3)
+
+#Usuarios
+User.create!(name:'Roberto',email:'roberto@gmail.com',password:'pamonha',admin: 0)
+User.create!(name:'Flavio',email:'flavindupneu@gmail.com',password:'batata',admin: 0)
+User.create!(name:'Jaime',email:'jaiminmatadordeporco@gmail.com',password:'feijao',admin: 0)
+User.create!(name:'Adalberto',email:'bruh@gmail.com',password:'alecrim',admin: 0)
+User.create!(name:'jorge luis',email:'carinha@hotmail.com',password:'dopamina',admin: 0)
+User.create!(name:'thiaginho',email:'lapeladoce@outlook.com',password:'tecladinho_lindinho_2009',admin: 1)
+User.create!(name:'profeteacher',email:'profeteacher@unb.com.br',password:'postgres',admin: 1)
