@@ -3,7 +3,7 @@ class Api::V1::CategoriesController < ApplicationController
     acts_as_token_authentication_handler_for User
 
     def index
-        categories = Category.all.select(:id, :name).order(:id)
+        categories = Category.all.select(:id, :name, :product_id).order(:id)
         render json: categories, status: :ok  
     end
 

@@ -3,7 +3,7 @@ class Api::V1::ProductsController < ApplicationController
     acts_as_token_authentication_handler_for User
 
     def index
-        product = Product.all.select(:id, :name, :description, :price).order(:id)
+        product = Product.all.select(:id, :name, :description, :price, :category_id).order(:id)
         render json: product, status: :ok  
     end
 
